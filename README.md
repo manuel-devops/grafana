@@ -1,8 +1,13 @@
 # in the container you just started:
 
+Despliegue de contenedor grafana
+
 ```bash
-chown -R root:root /etc/grafana && \
-chmod -R a+r /etc/grafana && \
-chown -R grafana:grafana /var/lib/grafana && \
-chown -R grafana:grafana /usr/share/grafana
-```# grafana
+docker compose up -d
+```
+
+Detenet el contenedor
+
+```bash
+docker compose down
+```

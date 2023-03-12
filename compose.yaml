@@ -2,7 +2,8 @@ services:
 
   grafana:
     container_name: dev-grafana
-    image: grafana/grafana:latest
+    #image: grafana/grafana:latest
+    build: .
     ports:
       - "3000:3000"
     volumes:
